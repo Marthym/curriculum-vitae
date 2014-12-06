@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{friggeri-cv} 	% Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage[french]{babel}
+\usepackage{csquotes}			% pour la ponctuation multi-langue
+
+\hypersetup{pdfborder={0 0 0},colorlinks}
+
+\begin{document}
+
+\header{frédéric}{|}{combes}{expert développement java} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+1 rue Pons Capdenier
+316500 TOULOUSE
+France
+~
++33 (0)6 31 97 71 06
+\href{mailto:marthym@gmail.com}{marthym@gmail.com}
+%\href{http://www.smith.com}{http://www.smith.com}
+%\href{http://facebook.com/johnsmith}{fb://jsmith}
+\section{langues}
+français langue maternelle
+anglais (lu, écrit, parlé)
+\section{compétences}
+Java J2EE
+Hibernate, Struts, Spring
+SVN, Git
+Oracle, MySQL
+JavaScript
+CSS3 \& HTML5
+Linux
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	SECTION: 'Expérience Professionnelle'
+%----------------------------------------------------------------------------------------
+\section{expriences professionnelles}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{Depuis 2014}
+{Living Objects}
+{Toulouse, Basso Cambo}
+{\emph{Expert développement Java} \\
+Au sein du département Recherche \& Développement de Living Object, composé d'une quinzaine de développeurs, je supervise les choix techniques concernant le projet "eye.lo", un collecteur de flow Cisco pour lequel les contraintes de performances et de haute disponibilité sont très strictes.
+
+En plus du projet "eye.lo", j'ai eu la possibilité de participer à l'implémentation de la future version du projet "b.lo", un sur-ensemble du projet "eye.lo" qui en plus des flow Cisco est capable de collecter des fichiers CSV issus de routeurs Hiawei ou via SNMP. Cette nouvelle version vise à accroitre la capacité de stockage et la parallélisation des calculs grâce à des solutions comme Cassandra ou Akka.
+}
+%------------------------------------------------
+\entry
+{2007 -- 2013}
+{Cameleon Software}
+{Toulouse, Labège}
+{\emph{Consultant Technique Expert} \\
+Expert Technique au sein de l'équipe "CEO Services" composée de neuf personnes, mes attributions sont les suivantes :
+\begin{itemize}
+\item Développement de composants d’interface sur les nouveaux produits. Pour des sociétés
+comme la MNT pour qui j’ai implémenté des composants de leur offre en ligne grâce à ma
+maîtrise des technologies web 2.0. \\
+	{\footnotesize \textit Java J2EE, JSP, Struts/Tiles, HTML/CSS/Javascript}
+\item Réalisation d’intégration entre nos produits et des CRM tel que Selligent pour des clients
+comme Gras Savoye grâce à mes compétences en Web Services. \\
+	{\footnotesize \textit Java J2EE, Axis 2.0}
+\item Réalisation de PoC, pour des clients comme AXA, MMA, SAGE ou encore La Poste. Mon sens
+du relationnel et l'esprit d'équipe nécessaires pour de telles réalisations, m'ont permis de
+présenter des concepts aboutis à des clients convaincus.
+\item Missions à l’étranger pour travailler avec notre équipe à Chicago sur des projets SaS comme
+Clear Channel et Crystal Rock pour qui j'ai développé des interfaces avancées de
+configuration de produit. \\
+{\footnotesize \textit Java J2EE, JSP, Struts/Tiles, HTML/CSS/Javascript}
+\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2001 -- 2007}
+{Access-Commerce}
+{Toulouse, Labège}
+{\emph{Développeur d'adaptations} \\
+Centre de compétences ERP chez Access Commerce à Toulouse Labège.
+En tant qu’unique ressource technique d'une équipe de sept personnes, j’ai, entre autres, effectué les
+missions suivantes :
+\begin{itemize}
+\item Installation et administration de serveur Oracle sur systèmes Windows et Unix \\
+	{\footnotesize \textit Certification Oracle DBA 10g, Shell UNIX}
+\item Windows trying to print in letter format \\
+	{\footnotesize \textit Java, J2EE, JSP, Administration et tuning Oracle 10g}
+\end{itemize}
+}
+%------------------------------------------------
+\end{entrylist}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Section FORMATION
+%----------------------------------------------------------------------------------------
+
+\section{formation}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2006}
+{Certification Oracle {\normalfont 10g Associate}}
+{Oracle, Paris}
+{}
+%------------------------------------------------
+\entry
+{2001}
+{Diplôme Universitaire {\normalfont Nouvelles technologies}}
+{IUT de Rodez}
+{Année de spécialisation Internet et nouvelles technologies}
+%------------------------------------------------
+\entry
+{2000}
+{DUT {\normalfont Informatique Génie logiciel}}
+{IUT de Rodez}
+{}
+\entry
+{1998}
+{Bac S {\normalfont Spécialité Biologie}}
+{Lycée Jeanne d'Arc de Millau}
+{}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Section COMPETENCES
+%----------------------------------------------------------------------------------------
+
+\section{compétences}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{---}
+{Anglais}
+{Lu, écrit et parlé}
+{Utilisé lors des mes déplacements aux USA et durant les réunions de cadrage avec les clients
+étrangers.}
+%------------------------------------------------
+\entry
+{---}
+{Java}
+{Expert}
+{Langage de programmation principal du logiciel édité par Caméléon Software}
+%------------------------------------------------
+\entry
+{---}
+{Eclipse, IntelliJ}
+{Maîtrise}
+{EDIs utilisés pour les développements}
+%------------------------------------------------
+\entry
+{---}
+{Subversion, Git}
+{Maîtrise}
+{Outils de gestion de source utilisé par Cameleon Software \& Living Objects}
+%------------------------------------------------
+\entry
+{---}
+{Oracle, MySQL}
+{Expert}
+{Certification OCA 10g, MySQL est la base de données utilisé chez Living Objects}
+%------------------------------------------------
+\entry
+{---}
+{Maven, Ivy}
+{Maîtrise}
+{Outils de build utilisé chez Living Objects}
+%------------------------------------------------
+\entry
+{---}
+{Linux}
+{Expert}
+{Unique système d'exploitation utilisé chez Cameleon \& Living Objects}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Section INTERETS
+%----------------------------------------------------------------------------------------
+
+\section{divers \& centres d'intérêt}
+
+Détenteur d'un \textbf{permis B}
+
+\textbf{professional:} algorithmique, TDD, amélioration de code legacy, travail en équipe
+
+\textbf{personal:} tennis, volley ball, ski, squash
+
+\end{document}
