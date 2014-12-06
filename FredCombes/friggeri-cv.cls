@@ -138,13 +138,16 @@
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
+
+\newcommand{\discretright}[1]{%
+\hfill{\footnotesize\addfontfeature{Color=lightgray} #1}}
+
 \newcommand{\entry}[4]{%
   #1&\parbox[t]{13.5cm}{% Largeur de la colonne de date
     \textbf{#2}%
-    \hfill{\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    \discretright{#3}\\%
     #4 \vspace{\parsep}%
   }\\}
-
 
 %%%%%%%%%%%%%%
 % Side block %
