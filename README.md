@@ -5,5 +5,4 @@ Need XelateX for build
 
 ## Build
 
-    cd cv_10
-    latexmk
+    cd FredCombes && latexmk
