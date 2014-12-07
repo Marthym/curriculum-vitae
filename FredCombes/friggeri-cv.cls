@@ -55,8 +55,14 @@
 \newfontfamily\jobfont[]{SkarpaLT}
 \newfontfamily\headingfont[]{Arial Bold}
 
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue}
+\defaultfontfeatures{Ligatures=TeX, Color=textcolor}
+\setmainfont[
+	Path=fonts/,
+	Extension=.otf,
+	UprightFont= *-Light,
+    BoldFont=*-CondensedBold,
+    ItalicFont=*-UltraLightItal
+	]{HelveticaNeue}
 
 %%%%%%%%%%
 % Header %
@@ -75,7 +81,7 @@
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\dashedfont #2}{\bodyfont  #3}
+      {\thinfont #1}{\dashedfont #2}{\bodyfont #3}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
