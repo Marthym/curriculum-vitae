@@ -49,10 +49,10 @@
 
 \RequirePackage[quiet]{fontspec}
 
-\newfontfamily\bodyfont[]{Print Bold}
-\newfontfamily\thinfont[]{Print Clearly}
-\newfontfamily\dashedfont[]{Print Dashed}
-\newfontfamily\jobfont[]{SkarpaLT}
+\newfontfamily\bodyfont[Path=fonts/,Extension=.otf]{PrintBold}
+\newfontfamily\thinfont[Path=fonts/,Extension=.otf]{PrintClearly}
+\newfontfamily\dashedfont[Path=fonts/,Extension=.otf]{PrintDashed}
+\newfontfamily\jobfont[Path=fonts/]{SkarpaLT}
 \newfontfamily\headingfont[]{Arial Bold}
 
 \defaultfontfeatures{Ligatures=TeX, Color=textcolor}
