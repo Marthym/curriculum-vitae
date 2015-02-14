@@ -5,4 +5,4 @@ Need XelateX for build
 
 ## Build
 
-    cd FredCombes && latexmk
+    cd java-software-engineer && latexmk
