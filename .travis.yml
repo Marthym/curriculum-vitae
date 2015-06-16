@@ -1,5 +1,6 @@
 install:
-- sudo apt-get install texlive-full texlive-fonts-recommended latexmk
+- sudo apt-get update -qq
+- sudo apt-get install -y texlive-full texlive-fonts-recommended latexmk
 script:
 - cd java-software-engineer
 - latexmk
