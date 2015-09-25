@@ -5,6 +5,12 @@ addons:
     - texlive-full
     - texlive-fonts-recommended
     - latexmk
+
+install:
+- mkdir -p ~/.fonts
+- cp java-software-engineer/fonts/*.otf ~/.fonts/
+- fc-cache -f -v
+
 script:
 - cd java-software-engineer
 - latexmk
