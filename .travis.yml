@@ -2,9 +2,15 @@ sudo: false
 addons:
   apt:
     packages:
-    - texlive-full
+    - texlive-base
+    - texlive-extra-utils
     - texlive-fonts-recommended
-    - latexmk
+    - texlive-font-utils
+    - texlive-lang-french
+    - texlive-latex-extra
+    - texlive-math-extra
+    - texlive-xetex
+    - latexmk 
 
 install:
 - mkdir -p ~/.fonts
