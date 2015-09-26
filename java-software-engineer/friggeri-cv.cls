@@ -49,19 +49,17 @@
 
 \RequirePackage[quiet]{fontspec}
 
-\newfontfamily\bodyfont[Path=fonts/,Extension=.otf]{PrintBold}
-\newfontfamily\thinfont[Path=fonts/,Extension=.otf]{PrintClearly}
-\newfontfamily\dashedfont[Path=fonts/,Extension=.otf]{PrintDashed}
-\newfontfamily\jobfont[Path=fonts/]{SkarpaLT}
+\newfontfamily\bodyfont[]{Print Bold}
+\newfontfamily\thinfont[]{Print Clearly}
+\newfontfamily\dashedfont[]{Print Dashed}
+\newfontfamily\jobfont[]{SkarpaLT}
 \newfontfamily\headingfont[]{Arial Bold}
 
-\defaultfontfeatures{Ligatures=TeX, Color=textcolor}
+\defaultfontfeatures{Color=textcolor}
 \setmainfont[
-	Path=fonts/,
-	Extension=.otf,
-	UprightFont= *-Light,
-    BoldFont=*-CondensedBold,
-    ItalicFont=*-UltraLightItal
+    UprightFont= HelveticaNeue-Light,
+    BoldFont=HelveticaNeue-CondensedBold,
+    ItalicFont=HelveticaNeue-UltraLightItal
 	]{HelveticaNeue}
 
 %%%%%%%%%%

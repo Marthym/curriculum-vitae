@@ -3,6 +3,7 @@ addons:
   apt:
     packages:
     - texlive-base
+    - texlive-latex-recommended
     - texlive-extra-utils
     - texlive-fonts-recommended
     - texlive-font-utils
@@ -10,11 +11,15 @@ addons:
     - texlive-latex-extra
     - texlive-math-extra
     - texlive-xetex
-    - latexmk 
+    - texlive-pictures
+    - pgf
+    - latex-xcolor
+    - lmodern
+    - latexmk
 
 install:
 - mkdir -p ~/.fonts
-- cp java-software-engineer/fonts/*.otf ~/.fonts/
+- cp java-software-engineer/fonts/* ~/.fonts/
 - fc-cache -f -v
 
 script:
