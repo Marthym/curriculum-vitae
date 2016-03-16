@@ -138,23 +138,22 @@
 \RequirePackage{enumitem}
 
 \setlength{\tabcolsep}{0pt}
-\newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
-}{%
-  \end{tabular*}
-}
+\newenvironment{entrylist}
+  {\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}}
+  {\end{tabular*}}
+
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
-\newcommand{\discretright}[1]{%
-\hfill{\footnotesize\addfontfeature{Color=lightgray} #1}}
+\newcommand{\discretright}[1]
+  {\hfill{\footnotesize\addfontfeature{Color=lightgray} #1}}
 
-\newcommand{\entry}[4]{%
-  #1 & \parbox[t]{13.5cm}{% Largeur de la colonne de date
-    \textbf{#2}%
-    \discretright{#3}\\%
-    #4 \vspace{\parsep}%
-  }\\
-}
+\newcommand{\entry}[4]
+  {#1 & \parbox[t]{13.5cm}
+    {\textbf{#2}\discretright{#3}\\%
+      #4
+      \vspace{\parsep}%
+    }\\%
+  }
 
 \newlist{capabilitize}{itemize}{1}
 \setlist[capabilitize,1]{label=\textbullet, leftmargin=*, align=left}
