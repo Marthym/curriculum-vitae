@@ -25,3 +25,22 @@ install:
 script:
 - cd java-software-engineer
 - latexmk
+
+deploy:
+  - provider: releases
+    api_key:
+      secure: DgG2D29uPVbTLAfD3cte6hGT35CppoaNv56PENgvrHpfAIFWhxsjLy9x/qvEGXSPYA6bHpOIIrjT4cwBHZN7HxPsrtL+xuXCZYCP1G6XT8RteHAtCterOvvtLtihe2iW6PLxCgCR8etDpxKnE4s0/Jwt+s0eNm73Q7FsolN3aSk=
+    file: cv-fred-combes.pdf
+    skip_cleanup: true
+    draft: true
+    on:
+      repo: Marthym/curriculum-vitae
+
+  - provider: releases
+    api_key:
+      secure: DgG2D29uPVbTLAfD3cte6hGT35CppoaNv56PENgvrHpfAIFWhxsjLy9x/qvEGXSPYA6bHpOIIrjT4cwBHZN7HxPsrtL+xuXCZYCP1G6XT8RteHAtCterOvvtLtihe2iW6PLxCgCR8etDpxKnE4s0/Jwt+s0eNm73Q7FsolN3aSk=
+    file: cv-fred-combes.pdf
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: Marthym/curriculum-vitae
