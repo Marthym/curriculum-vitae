@@ -14,6 +14,7 @@
 %%%%%%%%%%
 
 \RequirePackage{xcolor}
+\RequirePackage{xunicode}
 
 \definecolor{white}{RGB}{255,255,255}
 
@@ -136,6 +137,7 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{enumitem}
+\RequirePackage{pifont}
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}
@@ -163,6 +165,8 @@
 		#3
 	}
 }
+
+\renewcommand{\labelenumi}{\ding{120}}
 
 %%%%%%%%%%%%%%
 % Side block %

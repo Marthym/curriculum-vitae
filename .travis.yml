@@ -44,3 +44,6 @@ deploy:
     on:
       tags: true
       repo: Marthym/curriculum-vitae
+
+notifications:
+  email: false
