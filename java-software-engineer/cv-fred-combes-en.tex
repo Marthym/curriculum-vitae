@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Frédéric Combes/CV
+% XeLaTeX Template
+% Version 1.0 (2014-12-06)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{friggeri-cv} 	% Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\usepackage[french]{babel}
+\frenchbsetup{StandardItemLabels}
+
+\usepackage{csquotes}
+
+\hypersetup{pdfborder={0 0 0},colorlinks}
+
+\begin{document}
+
+\header{frédéric}{|}{combes}{Senior Software Engineer}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+1 rue Pons Capdenier
+31500 TOULOUSE
+France
+~
++33 (0)6 31 97 71 06
+\href{mailto:marthym@gmail.com}{marthym@gmail.com}
+\href{https://github.com/Marthym}{github.com/Marthym}
+\href{https://www.linkedin.com/in/combesfrederic}{in/combesfrederic}
+\section{languages}
+french native language
+english (read, written and spoken)
+\section{resume}
+Java 8, OSGi
+Maven, Git, Docker
+Oracle, MySQL, Neo4j
+JS, CSS3, HTML5
+Linux
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	SECTION: 'Expérience Professionnelle'
+%----------------------------------------------------------------------------------------
+\section{professional experiences}
+
+\begin{entrylist}
+%---- LIVING OBJECTS --------------------------------------------------------------------
+\entry
+{Since 2014}
+{Living Objects}
+{Toulouse, Basso Cambo}
+{\vspace{0.2cm}\emph{Senior Software Engineer} \discretright{/ Java 8, Neo4j, OSGi, Maven, Docker /}\\
+Within the Research \& Development department of Living Objects, composed of some fifteen developers,
+distributed between frontend and backend, I am involved in the development of "eye.LO".
+Developed in Java 8, on an OSGi framework with a REST micro-service architecture.
+
+I apply my skills mostly to the network topology module. This module, with a Neo4j database, is able to analyze all 
+network set up and equipments of the varied telecom operators using "eye.LO".
+\\}
+
+%---- CAMELEON SOFTWARE -----------------------------------------------------------------
+\entry
+{2007 \ding{224} 2013}
+{Cameleon Software}
+{Toulouse, Labège}
+{\vspace{0.2cm}\emph{Senior Technical Consultant} \discretright{/ Java J2EE, Axis 2, Struts, HTML/CSS/Js /}\\
+Technical expert in the "CEO Services" team, made up of nine persons.
+
+\begin{enumerate}
+	\item Development of integration components on new products. For companies like \textit{MNT} for which I have implemented components of their online offer thanks to my mastery in 2.0 web technologies.
+
+	\item Implementation of integration between Cameleon products and CRMs such as \textit{Selligent} for customers like \textit{Gras Savoye} thanks to my skills in Web Services.
+
+	\item Establishment of Proof of Concept for clients such as \textit{AXA, MMA, SAGE} or \textit{La Poste}. My interpersonal skills and the team spirit necessary for such achievements, allowed me to convince customers.
+
+	\item International missions to help with American team in Chicago with some huge SaaS projects as \textit{Clear Channel} and \textit{Crystal Rock}. For those projects I am in charge of the implementation of advanced product configuration interfaces.
+
+\end{enumerate}
+\
+}
+
+%---- ACCESS COMMERCE --------------------------------------------------------------------
+\entry
+{2001 \ding{224} 2007}
+{Access-Commerce}
+{Toulouse, Labège}
+{\vspace{0.2cm}\emph{Oracle Developer}  \discretright{/ Java, J2EE, Oracle Database Admin, Linux/UNIX /}\\
+ERP Competence centre at Access-Commerce in Toulouse Labège.
+As single technical resource in a team of seven, I carried out the following missions :
+\begin{enumerate}
+	\item Oracle database installation on Windows and Unix servers
+	\item Implementation of shoping portal for \textit{Pages Jaunes}
+	\item Implementations and customization of \textit{OCTAL} ERP based on `Oracle Forms Designer`
+\end{enumerate}
+}
+%------------------------------------------------
+\end{entrylist}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Section FORMATION
+%----------------------------------------------------------------------------------------
+
+\section{education \& qualifications}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2006}
+{Oracle Certification {\normalfont 10g Associate}}
+{Oracle, Paris}
+{}
+%------------------------------------------------
+\entry
+{2001}
+{University Degree {\normalfont Nouvelles technologies}}
+{IUT of Rodez}
+{Internet and new technologies specialization year}
+%------------------------------------------------
+\entry
+{2000}
+{DUT {\normalfont Computing Engineering Software}}
+{IUT of Rodez}
+{}
+%------------------------------------------------
+\entry
+{1998}
+{Bac S {\normalfont Biology specialty}}
+{Jeanne d’Arc High School of Millau}
+{}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Section COMPETENCES
+%----------------------------------------------------------------------------------------
+
+\section{skills}
+
+\begin{capabilitize}
+	\capability {English}
+		{read, written and spoken}
+		{Used during my missions in the USA and during scoping meeting with foreign customers}
+	\capability {Java 8}
+		{Expert}
+		{Main coding language for Cameleon Software \& Living Objects softwares}
+	\capability {Eclipse, IntelliJ}
+		{Mastery}
+		{EDIs used for all developments}
+	\capability {Subversion, Git}
+		{Mastery}
+		{Main source control tool for Cameleon Software \& Living Objects}
+	\capability {Oracle, MySQL}
+		{Expert}
+		{OCA 10g certification, MySQL is the main database used by Living Objects software}
+	\capability {Maven, Ivy}
+		{Mastery}
+		{Build tools used by Cameleon \& Living Objects}
+	\capability {Linux}
+		{Expert}
+		{Only system used personaly and professionally}
+\end{capabilitize}
+
+%----------------------------------------------------------------------------------------
+%	Section INTERETS
+%----------------------------------------------------------------------------------------
+
+\section{hobbies}
+
+Driving licence \textbf{type B}
+
+\textbf{professional:} algorithmic, TDD, legacy code improvement, team working
+
+\textbf{personal:} tennis, volley ball, ski, squash
+
+\end{document}
