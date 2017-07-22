@@ -25,6 +25,7 @@ install:
 script:
 - latexmk java-software-engineer/cv-fred-combes.tex
 - latexmk java-software-engineer/cv-fred-combes-en.tex
+- latexmk java-tech-leader/cv-tech-lead-fred-combes.tex
 
 deploy:
   - provider: releases
@@ -33,6 +34,7 @@ deploy:
     file: 
       - cv-fred-combes.pdf
       - cv-fred-combes-en.pdf
+      - cv-tech-lead-fred-combes.pdf
     skip_cleanup: true
     draft: true
     on:
@@ -44,6 +46,7 @@ deploy:
     file: 
       - cv-fred-combes.pdf
       - cv-fred-combes-en.pdf
+      - cv-tech-lead-fred-combes.pdf
     skip_cleanup: true
     on:
       tags: true
