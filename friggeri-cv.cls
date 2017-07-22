@@ -50,17 +50,14 @@
 
 \RequirePackage[quiet]{fontspec}
 
-\newfontfamily{\bodyfont}[Path = _fonts/]{PrintBold}
-\newfontfamily{\thinfont}[Path = _fonts/]{PrintClearly}
-\newfontfamily{\dashedfont}[Path = _fonts/]{PrintDashed}
-\newfontfamily{\jobfont}[Path = _fonts/]{SkarpaLT}
-\newfontfamily{\headingfont}[
-  Path=_fonts/,
-    Extension=.ttf
-]{Arial_Bold}
+\newfontfamily{\bodyfont}[]{Print Bold}
+\newfontfamily{\thinfont}[]{Print Clearly}
+\newfontfamily{\dashedfont}[]{Print Dashed}
+\newfontfamily{\jobfont}[]{SkarpaLT}
+\newfontfamily{\headingfont}[]{Arial Bold}
 
 \defaultfontfeatures{Color=textcolor}
-\setmainfont[Path = _fonts/,
+\setmainfont[
     UprightFont= HelveticaNeue-Light,
     BoldFont=HelveticaNeue-CondensedBold,
     ItalicFont=HelveticaNeue-UltraLightItal
