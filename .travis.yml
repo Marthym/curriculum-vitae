@@ -24,6 +24,7 @@ install:
 
 script:
 - latexmk java-software-engineer/cv-fred-combes.tex
+- latexmk java-software-engineer/cv-fred-combes-en.tex
 
 deploy:
   - provider: releases
