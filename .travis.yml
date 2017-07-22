@@ -19,18 +19,19 @@ addons:
 
 install:
 - mkdir -p ~/.fonts
-- cp java-software-engineer/fonts/* ~/.fonts/
+- cp _fonts/* ~/.fonts/
 - fc-cache -f -v
 
 script:
-- cd java-software-engineer
-- latexmk
+- latexmk java-software-engineer/cv-fred-combes.tex
 
 deploy:
   - provider: releases
     api_key:
       secure: DgG2D29uPVbTLAfD3cte6hGT35CppoaNv56PENgvrHpfAIFWhxsjLy9x/qvEGXSPYA6bHpOIIrjT4cwBHZN7HxPsrtL+xuXCZYCP1G6XT8RteHAtCterOvvtLtihe2iW6PLxCgCR8etDpxKnE4s0/Jwt+s0eNm73Q7FsolN3aSk=
-    file: cv-fred-combes.pdf
+    file: 
+      - cv-fred-combes.pdf
+      - cv-fred-combes-en.pdf
     skip_cleanup: true
     draft: true
     on:
@@ -39,7 +40,9 @@ deploy:
   - provider: releases
     api_key:
       secure: DgG2D29uPVbTLAfD3cte6hGT35CppoaNv56PENgvrHpfAIFWhxsjLy9x/qvEGXSPYA6bHpOIIrjT4cwBHZN7HxPsrtL+xuXCZYCP1G6XT8RteHAtCterOvvtLtihe2iW6PLxCgCR8etDpxKnE4s0/Jwt+s0eNm73Q7FsolN3aSk=
-    file: cv-fred-combes.pdf
+    file: 
+      - cv-fred-combes.pdf
+      - cv-fred-combes-en.pdf
     skip_cleanup: true
     on:
       tags: true
