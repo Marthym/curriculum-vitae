@@ -80,11 +80,11 @@
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\dashedfont #2}{\bodyfont #3}
+      {\thinfont #1}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
-      \jobfont #4%
+      {\thinfont #2}{\dashedfont #3}{\bodyfont #4}%
     };
   \end{tikzpicture}
   \vspace{2.5cm}
@@ -102,9 +102,9 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
         orange\or%
+        red\or%
+        blue\or%
         green\or%
         purple\or%
         brown\else%
