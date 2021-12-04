@@ -75,6 +75,22 @@
   \color{white}%
 }
 
+\newcommand{\headernamefirst}[4]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [anchor=center] (name) at (box) {%
+      \fontsize{40pt}{72pt}\color{header}%
+      {\thinfont #1}{\dashedfont #2}{\bodyfont #3}
+    };
+    \node [anchor=north] at (name.south) {%
+      \fontsize{14pt}{24pt}\color{header}%
+      \jobfont #4%
+    };
+  \end{tikzpicture}
+  \vspace{2.5cm}
+  \vspace{-2\parskip}
+}
+
 \newcommand{\header}[4]{%
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
@@ -148,6 +164,9 @@
 
 \newcommand{\discretright}[1]
   {\hfill{\footnotesize\addfontfeature{Color=lightgray} #1}}
+
+\newcommand{\markedright}[1]
+  {\hfill{\footnotesize\addfontfeature{Color=gray}\textbf{#1}}}
 
 \newcommand{\entry}[4]
   {#1 & \parbox[t]{13.5cm}
