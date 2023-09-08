@@ -23,34 +23,29 @@ install:
 - fc-cache -f -v
 
 script:
-- latexmk java-software-engineer/cv-fred-combes.tex
-- latexmk java-software-engineer/cv-fred-combes-en.tex
-- latexmk java-tech-leader/cv-tech-lead-fred-combes.tex
+- latexmk system-administrator/CV-system-administrator-CedricMartinez.tex
+- latexmk IT-Consultant/CV-IT-Consultant-CedricMartinez.tex
 
 deploy:
   - provider: releases
     api_key:
       secure: DgG2D29uPVbTLAfD3cte6hGT35CppoaNv56PENgvrHpfAIFWhxsjLy9x/qvEGXSPYA6bHpOIIrjT4cwBHZN7HxPsrtL+xuXCZYCP1G6XT8RteHAtCterOvvtLtihe2iW6PLxCgCR8etDpxKnE4s0/Jwt+s0eNm73Q7FsolN3aSk=
     file: 
-      - cv-fred-combes.pdf
-      - cv-fred-combes-en.pdf
-      - cv-tech-lead-fred-combes.pdf
+      - CV-CedricMartinez.pdf
     skip_cleanup: true
     draft: true
     on:
-      repo: Marthym/curriculum-vitae
+      repo: Lehnux/CV
 
   - provider: releases
     api_key:
       secure: DgG2D29uPVbTLAfD3cte6hGT35CppoaNv56PENgvrHpfAIFWhxsjLy9x/qvEGXSPYA6bHpOIIrjT4cwBHZN7HxPsrtL+xuXCZYCP1G6XT8RteHAtCterOvvtLtihe2iW6PLxCgCR8etDpxKnE4s0/Jwt+s0eNm73Q7FsolN3aSk=
     file: 
-      - cv-fred-combes.pdf
-      - cv-fred-combes-en.pdf
-      - cv-tech-lead-fred-combes.pdf
+      - CV-CedricMartinez.pdf
     skip_cleanup: true
     on:
       tags: true
-      repo: Marthym/curriculum-vitae
+      repo: Lehnux/CV
 
 notifications:
   email: false
