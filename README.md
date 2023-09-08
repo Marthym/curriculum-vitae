@@ -1,7 +1,8 @@
 # About
-Latest version of my CV.
+Please find in the releases the latest version of my CV.
 
-Need XelateX for build
+## Orerequisites
+* XelateX
 
 ## Build
 
